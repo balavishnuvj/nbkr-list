@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -29,4 +31,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.card-vertical{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-horizontal{
+    display: flex;
+    width: 100vw;
+    overflow-x: scroll;
+}
+
+.card-horizontal > div {
+  margin: 0 2em;
+  min-width: 20em;
+}
+
+.property-card{
+  width: 45%;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+
+.property-card {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.property-card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+img {
+  width: 100%;
 }
